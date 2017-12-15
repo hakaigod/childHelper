@@ -1,0 +1,39 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NurseryTeacher
+</name>
+</assembly>
+<members>
+<member name="P:NurseryTeacher.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:NurseryTeacher.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:NurseryTeacher.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:NurseryTeacher.Hash.GetSaltedPassword(System.String,System.String)">
+	<summary>'
+ salt ＋ハッシュ化したパスワードを取得'
+ </summary>'
+
+</member><member name="M:NurseryTeacher.Hash.GetStretchedPassword(System.String,System.String)">
+	<summary>'
+ salt + ストレッチングしたパスワードを取得(推奨)'
+ </summary>'
+
+</member><member name="M:NurseryTeacher.Hash.GetSha256(System.String)">
+	<summary>'
+ 文字列から SHA256 のハッシュ値を取得'
+ </summary>'
+
+</member>
+</members>
+</doc>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+管理者
+</name>
+</assembly>
+<members>
+<member name="P:WindowsApplication1.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:WindowsApplication1.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:WindowsApplication1.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:WindowsApplication1.SQLConnectClass.DBConnect(System.String)">
+	<summary>
+ 指定されたSQLを実行します。
+ </summary>
+	<param name="sqlRequestString">実行するSQL文</param>
+	<returns>正常終了: TRUE エラー発生: FALSE</returns>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.SQLConnectClass.DBResult">
+	<summary>
+ DataSet型を取り出す
+ </summary>
+	<returns></returns>
+	<remarks>互換性のために必須で残す</remarks>
+</member><member name="M:WindowsApplication1.SQLConnectClass.DBResult(System.Int32,System.String)">
+	<summary>
+ 指定した行・列に存在する項目を取り出す
+ </summary>
+	<param name="lineIndex">0から始まる行番号</param>
+	<param name="columnName">列の名前</param>
+	<returns>単一の文字列</returns>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.SQLConnectClass.DBResult(System.Int32,System.Int32)">
+	<summary>
+ 指定した行・列に存在する項目を取り出す
+ </summary>
+	<param name="lineIndex">0から始まる行番号</param>
+	<param name="columnIndex">0から始まる列番号</param>
+	<returns>単一の文字列</returns>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.SQLConnectClass.DBResult(System.String)">
+	<summary>
+ 最初の行の指定列に存在する項目を取り出す
+ </summary>
+	<param name="columnName">列の名前</param>
+	<returns>単一の文字列</returns>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.SQLConnectClass.DBResult(System.Int32)">
+	<summary>
+ 最初の行の指定列に存在する項目を取り出す
+ </summary>
+	<param name="columnIndex">0から始まる列番号</param>
+	<returns>単一の文字列</returns>
+	<remarks></remarks>
+</member><member name="T:WindowsApplication1.SQLConnectClass">
+	<summary>
+ version 2.0
+ </summary>
+</member><member name="M:WindowsApplication1.BaseForm.forwardScreen(System.Windows.Forms.Form,System.Windows.Forms.Form)">
+	<summary>
+ 画面を遷移する
+ </summary>
+	<param name="TransitionOriginal">遷移元</param>
+	<param name="TransitionTarget">遷移先</param>
+</member><member name="M:WindowsApplication1.ProgressStatesForm.ProgressStatesLabelSet(System.Int32)">
+	<summary>
+ 進行状況を設定する
+ </summary>
+	<param name="i">設定値</param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.ProgressStatesForm.ProgressStatesLabelUpdate(System.Int32)">
+	<summary>
+ 進行状況を更新する
+ </summary>
+	<param name="i">指定数値だけ加算する</param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.ProgressStatesForm.ProgressStatesLabelUpdate">
+	<summary>
+ 進行状況を更新する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.ProgressStatesForm.ProgressStatesMaxSet(System.Int32)">
+	<summary>
+ 最大値を設定する
+ </summary>
+	<param name="m">最大値</param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.ProgressStatesForm.ProcessContentsSet(System.String)">
+	<summary>
+ 進行内容を記録する
+ </summary>
+	<param name="s">進行内容</param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.AdministratorForm.GetClickCellButtonContent(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ 必要物が全てハードコーティング済みのDataGridViewから、
+ クリックされたボタンの内容を取得する。
+ </summary>
+	<param name="sender">senderそのまま代入</param>
+	<param name="e">eventそのまま代入</param>
+	<returns>クリックされたボタンの内容</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

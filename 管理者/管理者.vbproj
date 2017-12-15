@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25AAABD0-88AE-49AE-9092-49E674E28774}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>管理者</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>管理者.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>管理者.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm">
+      <HintPath>..\packages\DevExpressMvvm.17.1.6.0\lib\net40-client\DevExpress.Mvvm.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.UI">
+      <HintPath>..\packages\DevExpressMvvm.17.1.6.0\lib\net40-client\DevExpress.Mvvm.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.10.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdministratorForm.designer.vb">
+      <DependentUpon>AdministratorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.vb">
+      <DependentUpon>BaseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildDBView.designer.vb">
+      <DependentUpon>ChildDBView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildDBView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Month\AddClass.designer.vb">
+      <DependentUpon>AddClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Month\AddClass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Month\Month1Age.designer.vb">
+      <DependentUpon>Month1Age.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Month\Month1Age.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Month\Month1AgeShownDummy.designer.vb">
+      <DependentUpon>Month1AgeShownDummy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Month\Month1AgeShownDummy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Month\Month2Age.designer.vb">
+      <DependentUpon>Month2Age.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Month\Month2Age.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Month\Month2Day.Designer.vb">
+      <DependentUpon>Month2Day.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Month\Month2Day.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Month\Month35Age.designer.vb">
+      <DependentUpon>Month35Age.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Month\Month35Age.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoveForm.vb" />
+    <Compile Include="TeacherDBView.designer.vb">
+      <DependentUpon>TeacherDBView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherDBView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectAddDocument.Designer.vb">
+      <DependentUpon>SelectAddDocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectAddDocument.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Month\MonthLow.designer.vb">
+      <DependentUpon>MonthLow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Month\MonthLow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SQLConnectClass.vb" />
+    <Compile Include="TestClass\ProgressStatesForm.Designer.vb">
+      <DependentUpon>ProgressStatesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TestClass\ProgressStatesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestClass\Watch.Designer.vb">
+      <DependentUpon>Watch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TestClass\Watch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="watermark.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Week\week05.designer.vb">
+      <DependentUpon>week05.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Week\week05.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdministratorForm.resx">
+      <DependentUpon>AdministratorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildDBView.resx">
+      <DependentUpon>ChildDBView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Month\AddClass.resx">
+      <DependentUpon>AddClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Month\Month1Age.resx">
+      <DependentUpon>Month1Age.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Month\Month1AgeShownDummy.resx">
+      <DependentUpon>Month1AgeShownDummy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Month\Month2Age.resx">
+      <DependentUpon>Month2Age.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Month\Month2Day.resx">
+      <DependentUpon>Month2Day.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Month\Month35Age.resx">
+      <DependentUpon>Month35Age.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherDBView.resx">
+      <DependentUpon>TeacherDBView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectAddDocument.resx">
+      <DependentUpon>SelectAddDocument.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Month\MonthLow.resx">
+      <DependentUpon>MonthLow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestClass\ProgressStatesForm.resx">
+      <DependentUpon>ProgressStatesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestClass\Watch.resx">
+      <DependentUpon>Watch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="watermark.resx">
+      <DependentUpon>watermark.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Week\week05.resx">
+      <DependentUpon>week05.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
