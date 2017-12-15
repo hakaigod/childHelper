@@ -179,7 +179,7 @@ Public Class TeacherEdit
         End If
     End Sub
 
-    Private Sub CancelButton_Click_1(sender As Object, e As EventArgs) Handles CancelButton.Click
+    Private Sub CancelButton_Click_1(sender As Object, e As EventArgs) Handles CancelButton2.Click
 
         'メッセージボックスを表示する 
         Dim result As DialogResult = MessageBox.Show("登録を中断しますか？", _
