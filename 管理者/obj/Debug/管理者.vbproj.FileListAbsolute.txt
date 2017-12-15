@@ -429,3 +429,7 @@ C:\Users\15110029\Source\Repos\child8\管理者\obj\Debug\WindowsApplication1.Wa
 C:\Users\15110029\Source\Repos\child8\管理者\obj\Debug\WindowsApplication1.Watermark.resources
 C:\Users\15110029\Source\Repos\child8\管理者\obj\Debug\WindowsApplication1.week05.resources
 C:\Users\15110029\Source\Repos\child8\管理者\obj\Debug\管理者.vbproj.GenerateResource.Cache
+C:\Users\15110029\Source\Repos\childHelper\管理者\bin\Debug\管理者.exe.config
+C:\Users\15110029\Source\Repos\childHelper\管理者\obj\Debug\管理者.exe
+C:\Users\15110029\Source\Repos\childHelper\管理者\obj\Debug\管理者.xml
+C:\Users\15110029\Source\Repos\childHelper\管理者\obj\Debug\管理者.pdb
